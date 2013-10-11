@@ -20,4 +20,8 @@ class DashboardController extends AuthorizedController {
 		return View::make('dashboard.home');
 	}
 
+	public function showSites(){
+		return View::make('dashboard.index');
+	}
+
 }

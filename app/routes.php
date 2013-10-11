@@ -14,4 +14,7 @@
 
 Route::controller('account','AccountController' );
 Route::get('/', 'HomeController@showIndex');
-Route::get('dashboard', 'DashboardController@showIndex');
+Route::get('dashboard', 'SitesController@showIndex');
+
+Route::get('site/new', 'SitesController@createSite');
+Route::post('site/new', 'SitesController@insertSite');
