@@ -58,7 +58,11 @@
 
 					<div class="nav-collapse collapse">
 						<ul class="nav">
+							@if (Auth::check())
+							<li {{{ (Request::is('dashboard') ? 'class="active"' : '') }}}><a href="{{{ URL::to('dashboard') }}}">Dashboard</a></li>
+							@else
 							<li {{{ (Request::is('/') ? 'class="active"' : '') }}}><a href="{{{ URL::to('') }}}">Home</a></li>
+							@endif
 						</ul>
 
 						<ul class="nav pull-right">
