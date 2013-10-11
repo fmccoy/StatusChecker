@@ -102,7 +102,7 @@ class AccountController extends AuthorizedController
 		//
 		if (Auth::check())
 		{
-			return Redirect::to('account');
+			return Redirect::to('dashboard');
 		}
 
 		// Show the page.
@@ -144,7 +144,7 @@ class AccountController extends AuthorizedController
 			{
 				// Redirect to the users page.
 				//
-				return Redirect::to('account')->with('success', 'You have logged in successfully');
+				return Redirect::to('dashboard')->with('success', 'You have logged in successfully');
 			}
 			else
 			{
