@@ -14,3 +14,4 @@
 
 Route::controller('account','AccountController' );
 Route::get('/', 'HomeController@showIndex');
+Route::get('dashboard', 'DashboardController@showIndex');
