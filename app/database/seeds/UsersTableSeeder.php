@@ -9,12 +9,10 @@ class UsersTableSeeder extends Seeder {
 
         $users = array(
             array(
-                'email'      => 'test@test.com',
+                'email'      => 'fmccoy@thisisamg.com',
                 'password'   => Hash::make('test'),
-	        'first_name' => 'John',
-	        'last_name'  => 'Doe',
-                'created_at' => new DateTime,
-                'updated_at' => new DateTime,
+                'first_name' => 'Frank',
+                'last_name'  => 'McCoy'
             )
         );
 
