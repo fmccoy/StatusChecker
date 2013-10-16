@@ -30,7 +30,5 @@ class SitesController extends AuthorizedController{
 		$site->save();
 
 		return Redirect::to('dashboard');
-
-
 	}
 }

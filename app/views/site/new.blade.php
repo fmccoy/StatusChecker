@@ -20,7 +20,7 @@ body {
 	<h1>New Site</h1>
 </div>
 
-{{ Form::open(array('url' => 'site/new', 'method' => 'post', 'class' => 'form-horizontal' )) }}
+{{ Form::open(array('route' => 'site.store', 'method' => 'post', 'class' => 'form-horizontal' )) }}
 
 
 	<!-- CSRF Token -->

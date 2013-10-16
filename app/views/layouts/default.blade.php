@@ -20,6 +20,7 @@
 		<!-- CSS
 		================================================== -->
 		<link href="{{{ asset('assets/css/bootstrap.css') }}}" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 
 		<style>
 		@section('styles')

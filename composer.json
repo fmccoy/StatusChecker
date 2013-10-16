@@ -1,6 +1,8 @@
 {
 	"require": {
-		"laravel/framework": "4.0.*"
+		"laravel/framework": "4.0.*",
+		"ricardoper/twitteroauth": "dev-master",
+		"liebig/cron": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

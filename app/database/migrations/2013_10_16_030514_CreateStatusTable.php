@@ -2,13 +2,9 @@
 
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSitesTable extends Migration {
+class CreateStatusTable extends Migration {
 
-	public $tableName = 'sites';
-
-	public function __construct(){
-		$this->tableName;
-	}
+	public $tableName = 'status';
 
 	/**
 	 * Run the migrations.
@@ -21,8 +17,10 @@ class CreateSitesTable extends Migration {
 
 			Schema::create($this->tableName, function($table){
 				$table->increments('id');
-				$table->string('created_by');
-				$table->string('url');
+				$table->string('request_id');
+				$table->string('error_id');
+				$table->string('error_resolved');
+				$table->string('response_code');
 				$table->timestamps();
 			});
 		}

@@ -4,25 +4,26 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateUsersTable extends Migration
 {
+    public $tableName = 'users';
+
     /**
      * Run the migrations.
      *
-     * @access   public
-     * @return   void
+     * @return void
      */
     public function up()
     {
-        // Create the users table.
-        //
-        Schema::create('users', function($table)
-        {
-            $table->increments('id');
-            $table->string('email');
-            $table->string('password');
-            $table->string('first_name');
-            $table->string('last_name');
-            $table->timestamps();
-        });
+        if( ! Schema::hasTable($this->tableName)){
+
+            Schema::create($this->tableName, function($table){
+                $table->increments('id');
+                $table->string('email');
+                $table->string('password');
+                $table->string('first_name');
+                $table->string('last_name');
+                $table->timestamps();
+            });
+        }
     }
 
     /**
@@ -33,6 +34,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('users');
+        Schema::drop($this->tableName);
     }
 }
