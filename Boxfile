@@ -26,6 +26,8 @@ web1:
     - "rm -f app/storage/cache/*"
     - "php artisan cache:clear"
     - "rm -f app/storage/views/*"
-
+db1:
+  name: james
+  type: mysql
 cache1:
   type: redis
