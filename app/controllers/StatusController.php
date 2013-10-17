@@ -3,7 +3,7 @@
 use \Carbon\Carbon;
 use TwitterOAuth\TwitterOAuth;
 
-class StatusController extends AuthorizedController {
+class StatusController extends BaseController {
 
 	/**
 	 * Display a listing of the resource.
